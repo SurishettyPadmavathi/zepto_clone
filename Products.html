@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zepto - 10 Minutes Delivery</title>
+  <link rel="stylesheet" href="./Products.css">
+  <link rel="shortcut icon" href="./assets/zepto-favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <section id="nav1">
+      <aside id="logo-address">
+        <div id="logo">
+          Z
+        </div>
+        <div id="address">
+          <p>Delivery in <span>10 mins</span></p>
+          <p id="location"><i class="fa-solid fa-location-dot"></i> Select Address</p>
+        </div>
+      </aside>
+      <aside id="links">
+        <a href="./index.html">Home</a>
+        <a href="./Products.html" class="active">Products</a>
+      </aside>
+      <aside id="user-cart">
+       <i class="fa-solid fa-heart"
+   onclick="location.assign('./Wishlist.html')"></i>
+        <div class="cart-icon" onclick="location.assign('./Cart.html')">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </div>
+      </aside>
+    </section>
+  </nav>
+  <section id="products-section">
+    <article id="products-section-1">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search Products....">
+      <a href="./index.html#category-items">
+        <i class="fa-solid fa-arrow-right"></i>
+        Browse Categories</a>
+    </article>
+    <article id="products-section-2"></article>
+  </section>
+  <script src="./Cart.js"></script>
+  <script src="Wishlist.js"></script>
+  <script src="./Products.js"></script>
+  <script src="./location.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+  <link rel="stylesheet" href="./Category.css">
+  <link rel="shortcut icon" href="./assets/zepto-favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- !NAVBAR -->
+  <nav>
+    <section id="nav1">
+      <aside id="logo-address">
+        <div id="logo">
+          Z
+        </div>
+        <div id="address">
+          <p>Delivery in <span>10 mins</span></p>
+          <p id="location"><i class="fa-solid fa-location-dot"></i> Select Address</p>
+        </div>
+      </aside>
+      <aside id="links">
+        <a href="./index.html">Home</a>
+        <a href="./Products.html">Products</a>
+      </aside>
+      <aside id="user-cart">
+      <i class="fa-solid fa-heart"
+   onclick="location.assign('./Wishlist.html')"></i>
+        <div class="cart-icon" onclick="location.assign('./Cart.html')">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </div>
+      </aside>
+    </section>
+  </nav>
+  <!-- !HEADER -->
+  <header>
+    <aside id="header-one"></aside>
+    <aside id="header-two"></aside>
+  </header>
+  <!-- !CATEGORY ITEMS -->
+  <section id="category-items">
+    <aside id="sidebar-one">
+      <h3>Sort By</h3>
+      <div class="radio-group">
+        <input type="radio" name="sort" id="relevance" value="Relevance" checked>
+        <label for="relevance">Relevance</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" name="sort" id="priceAsc" value="Price Asc">
+        <label for="priceAsc">Price Asc</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" name="sort" id="priceDesc" value="Price Desc">
+        <label for="priceDesc">Price Desc</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" name="sort" id="discount" value="Discount">
+        <label for="discount">Discount</label>
+      </div>
+      <h3 id="max-price-heading">Max Price: $<span>50000</span></h3>
+      <input type="range" name="max-price" id="max-price" min="0" max="50000" value="50000">
+      <div class="checkbox-group">
+        <input type="checkbox" name="In-Stock" id="inStock" value="In Stock Only">
+        <label for="inStock">In Stock Only</label>
+      </div>
+    </aside>
+    <aside id="sidebar-two">
+    </aside>
+  </section>
+  <script src="./Cart.js"></script>
+  <script src="Wishlist.js"></script> 
+  <script src="./Category.js"></script>
+  <script src="./location.js"></script>
+</body>
+
+</html>

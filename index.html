@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zepto - 10 Minutes Delivery</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/zepto-favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- !NAVBAR -->
+  <nav>
+    <section id="nav1">
+      <aside id="logo-address">
+        <div id="logo">
+          Z
+        </div>
+        <div id="address">
+          <p>Delivery in <span>10 mins</span></p>
+          <p id="location"><i class="fa-solid fa-location-dot"></i> Select Address</p>
+        </div>
+      </aside>
+      <aside id="links">
+        <a href="#" class="active">Home</a>
+        <a href="./Products.html">Products</a>
+      </aside>
+      <aside id="user-cart">
+        <i class="fa-solid fa-heart"
+   onclick="location.assign('./Wishlist.html')"></i>
+        <div class="cart-icon" onclick="location.assign('./Cart.html')">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </div>
+      </aside>
+    </section>
+  </nav>
+  <!-- !HEADER -->
+  <header>
+    <div id="banner-container">
+      <img src="./assets/hero-background-1.png" alt="banner1">
+      <img src="./assets/hero-background-2.png" alt="banner2">
+      <img src="./assets/hero-background-1.png" alt="banner3">
+      <img src="./assets/hero-background-2.png" alt="banner2">
+    </div>
+  </header>
+  <!-- !CATEGORY -->
+  <section id="category">
+    <article id="category-title">
+      <h2>Shop by Category</h2>
+    </article>
+    <article id="category-items">
+    </article>
+  </section>
+  <!-- !HIGHLIGHTS -->
+  <section id="highlights">
+    <div class="highlight-container one">
+      <p class="highlight-icon">🚴</p>
+      <p class="highlight-title">Free Delivery</p>
+      <p class="highlight-description">On order above ₹149/-</p>
+    </div>
+    <div class="highlight-container two">
+      <p class="highlight-icon">⚡</p>
+      <p class="highlight-title">10 mins delivery</p>
+      <p class="highlight-description">Lightening fast</p>
+    </div>
+    <div class="highlight-container three">
+      <p class="highlight-icon">💸</p>
+      <p class="highlight-title">Best Prices</p>
+      <p class="highlight-description">Directly from farms</p>
+    </div>
+    <div class="highlight-container four">
+      <p class="highlight-icon">🛍️</p>
+      <p class="highlight-title">Wide assortment</p>
+      <p class="highlight-description">5000+ products</p>
+    </div>
+  </section>
+  <!-- !FOOTER -->
+  <footer>
+    <h2>Zepto</h2>
+    <p>&copy; 2026 | 10 Minutes Delivery</p>
+    <p>194 products across 24 categories.</p>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="./location.js"></script>
+</body>
+</html>
